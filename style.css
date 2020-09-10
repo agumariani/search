@@ -13,7 +13,9 @@ body {
 }
 
 .pages {
-    flex: auto;
+    flex-basis: auto;
+    flex-shrink: 5;
+    flex-grow: 0.5;
     align-self: flex-end;
     margin: 20px 10px 0 0;
 }
