@@ -15,11 +15,11 @@ body {
 .pages {
     flex: auto;
     align-self: flex-end;
-    margin: 10px;
+    margin: 20px 10px 0 0;
 }
 
 a {
-    margin: 10px; 
+    margin: 15px; 
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a:hover {
 }
 
 .center { 
-    flex: auto;
+    flex: 2;
 }
 
 .logo {
@@ -62,7 +62,7 @@ a:hover {
 
 .inputSearch {
     background-color: transparent;    
-    margin: 0;
+    margin: 20px;
     font-size: 18px;
     word-wrap: break-word;
     outline: none;
@@ -70,7 +70,7 @@ a:hover {
     padding: 6px;
     padding-left: 14px;
     overflow-y: hidden;
-    height:25px;
+    height:28px;
     border:1px solid #DFE1E5;
     border-radius:50px;
 }
@@ -95,9 +95,21 @@ a:hover {
 
 .button:hover {
     color: black;
-    border: 2px solid black;
+    border: 0.5px solid black;
 }
 
 .button:active {
     border: 0.5px solid blue;
+}
+
+.logoContainer {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.logoSubtext {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    align-self: flex-end;
 }
