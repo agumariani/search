@@ -20,6 +20,15 @@ body {
 
 a {
     margin: 10px; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .center { 
@@ -86,5 +95,9 @@ a {
 
 .button:hover {
     color: black;
-    border: 1px solid black;
+    border: 2px solid black;
+}
+
+.button:active {
+    border: 0.5px solid blue;
 }
