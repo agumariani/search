@@ -8,18 +8,43 @@
 
 <body>
 	<div class="content">
-		<div class="pages">
-			<a href="index.html">Goole Search</a>
+		<div class="header">
+			
+				<img class="headerLogo" src="google_logo.png">
+			
+			<div class="link">
+				<a href="index.html">Goole Search</a>
+			</div>
 		</div>
 		<div class="center">
-			<div class="search_block">
-				<img class="logo" src="google_logo.png">
-				<form class="form" action="http://images.google.com/images">
+			<label class="title">Advanced search</label>
+			<div class="dividerLine"></div>
+			<div class="advancedSearch_block">
+				<form class="form" action="https://google.com/search">
+					<label class="title2">Find pages with...</label>
+					<span class="title3">To do this in the search box.</span>
 					<div class="input">
-						<input class="inputSearch" type="text" name="q" aria-label="Search"> 
+						<label>all these words:</label>
+						<input class="advancedInput" type="text" name="as_q" aria-label="Search">
+						<span class="inputEx">Type the important words: tri-colour rat terrier</span>
+					</div>
+					<div class="input">
+						<label>this exact word or phrase:</label>
+						<input class="advancedInput" type="text" name="as_epq" aria-label="Search">
+						<span class="inputEx">Put exact words in quotes: "rat terrier"</span>
+					</div>
+					<div class="input">
+						<label>any of these words:</label>
+						<input class="advancedInput" type="text" name="as_oq" aria-label="Search">
+						<span class="inputEx">Type OR between all the words you want: miniature OR standard</span>
+					</div>
+					<div class="input">
+						<label>none of these words:</label>
+						<input class="advancedInput" type="text" name="as_eq" aria-label="Search">
+						<span class="inputEx">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</span>
 					</div>
 					<div class="buttons">
-						<input class="button" type="submit" name="btnk" value="Google Search">
+						<input class="advancedButton" type="submit" name="btnk" value="Advanced Search">
 					</div>
 				</form>
 			</div>
