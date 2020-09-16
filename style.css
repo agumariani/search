@@ -12,15 +12,38 @@ body {
 
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f1f1f1;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.headerLogo {
+    height: 33px;
+    width: 92px;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.link {
+    margin: 15px;
+}
+
 .pages {
+    display: flex;
+    align-self: flex-end;
     flex-basis: auto;
     flex-shrink: 5;
-    flex-grow: 0.5;
-    align-self: flex-end;
-    margin: 20px 10px 0 0;
+    flex-grow: 0.35;
+    margin: 5px 10px 0 0;
 }
 
 a {
+    align-self: flex-start;
     margin: 15px; 
     text-decoration: none;
 }
@@ -34,6 +57,9 @@ a:hover {
 }
 
 .center { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     flex: 2;
 }
 
@@ -42,6 +68,15 @@ a:hover {
     width: 272px;
 }
 
+.title {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+.dividerLine {
+    border-bottom: 1px solid #ebebeb;
+}
 
 .search_block {
     display: flex;
@@ -54,12 +89,13 @@ a:hover {
     margin:0px;
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .input {
     padding:7px; 
+    display: flex;
 }
 
 .inputSearch {
@@ -114,4 +150,76 @@ a:hover {
     color: #4285f4;
     font: 16px/16px roboto-regular, arial, sans-serif;
     align-self: flex-end;
+}
+
+.advancedInput {
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    width: 100%;
+    text-align: left;
+}   
+
+.advancedInput:focus {
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+.advancedSearch_block {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+    flex: 1;
+}
+
+label {
+
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.title2 {
+    align-self: flex-start;
+    font-size: 16px;
+}
+
+.advancedSearch_block .input {
+    align-self: flex-start;
+    display: flex;
+    width: 500px;
+}
+
+.advancedButton {
+    align-items: flex-start;
+    background-color: #4787ed;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 16px;
+    height: 27px;
+    padding: 0 8px;
+}
+
+.advancedButton:active {
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+}
+
+.inputEx {
+    color: #555;
+    font-size: 11px;
 }
