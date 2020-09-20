@@ -89,13 +89,29 @@ a:hover {
     margin:0px;
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
+    flex-grow: 0.5;
+}
+
+.formAdvanced {
+    margin:0px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 0.5;
 }
 
 .input {
     padding:7px; 
     display: flex;
+}
+
+.input2 {
+    padding:7px; 
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+    align-self: stretch;
 }
 
 .inputSearch {
@@ -143,7 +159,6 @@ a:hover {
 .logoContainer {
     display:flex;
     flex-direction: column;
-
 }
 
 .logoSubtext {
@@ -153,6 +168,7 @@ a:hover {
 }
 
 .advancedInput {
+    flex: 0.7;
     border-radius: 1px;
     border: 1px solid #d9d9d9;
     border-top: 1px solid #c0c0c0;
@@ -170,11 +186,11 @@ a:hover {
 }
 
 .advancedSearch_block {
+    display: flex;
     max-width: 1140px;
     min-width: 200px;
     width: 96%;
     margin: 40px 2% 0 45px;
-    flex: 1;
 }
 
 label {
@@ -195,7 +211,9 @@ label {
 .advancedSearch_block .input {
     align-self: flex-start;
     display: flex;
-    width: 500px;
+    justify-content: space-between;
+    flex-basis: 100%;
+    flex-grow: 1;
 }
 
 .advancedButton {
@@ -217,9 +235,17 @@ label {
     box-shadow: none;
     background-color: #4d90fe;
     background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
 }
 
-.inputEx {
+.toDoInSearch {
     color: #555;
     font-size: 11px;
+    flex: 0.35;
+    margin-left: 5px;
+}
+
+.input .div {
+    display: flex;
+    justify-content: space-between;
 }
